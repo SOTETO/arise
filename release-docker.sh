@@ -2,7 +2,7 @@ set -ex
 
 # SET THE FOLLOWING VARIABLES
 # docker hub username
-USERNAME=vivaconagua
+USERNAME=soteto
 
 # image name
 IMAGE=arise

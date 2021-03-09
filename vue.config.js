@@ -14,5 +14,32 @@ module.exports = {
         svgRule
             .use('svg-inline-loader')
             .loader('svg-inline-loader')
-    }
+    },
+    // introduced due to Vue-CLI issue (https://github.com/vuejs/vue-cli/issues/4400)
+    devServer: {
+        // historyApiFallback: false,
+        disableHostCheck: true,
+        public: "0.0.0.0",
+        sockPath: "/arise/sockjs-node/",
+        port: 8080,
+    },
+    configureWebpack: {
+        plugins: [
+            {
+                apply: compiler => {
+                    compiler.hooks.entryOption.tap("entry", () => {
+                        const clients = compiler.options.entry.app;
+                        for (const index in clients) {
+                            if (clients[index].match(/sockjs-node/)) {
+                                clients[index] = clients[index].replace(
+                                    "0.0.0.0/sockjs-node",
+                                    "0.0.0.0&sockPath=/arise/sockjs-node/",
+                                );
+                            }
+                        }
+                    });
+                },
+            },
+        ],
+    },
 }

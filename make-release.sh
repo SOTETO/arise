@@ -1,6 +1,6 @@
 set - ex
 
-USERNAME=vivaconagua
+USERNAME=soteto
 IMAGE=arise
 
 PACKAGE_VERSION=$(cat package.json \
@@ -9,7 +9,7 @@ PACKAGE_VERSION=$(cat package.json \
   | awk -F: '{ print $2 }' \
   | sed 's/[", ]//g')
 
-echo "ARISE v$PACKAGE_VERSION"
+echo "ARISE $PACKAGE_VERSION"
 
 docker build -t $USERNAME/$IMAGE:latest .
 
