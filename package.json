@@ -1,6 +1,6 @@
 {
-  "name": "arise-dev",
-  "version": "0.8.37",
+  "name": "arise",
+  "version": "0.8.42",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 8080",
@@ -17,7 +17,7 @@
     "portfinder": "^1.0.23",
     "v-tooltip": "^2.0.3",
     "vca-widget-base": "^0.1.5",
-    "vca-widget-navigation": "^0.2.13",
+    "heureka-widget-navigation": "^0.2.15",
     "vca-widget-user": "^0.6.5",
     "vee-validate": "^2.2.15",
     "vue": "^2.6.10",

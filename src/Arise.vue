@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    import { WidgetTopNavigation, WidgetBottomNavigation } from 'vca-widget-navigation';
+    import { WidgetTopNavigation, WidgetBottomNavigation } from 'heureka-widget-navigation';
     import 'element-ui/lib/theme-chalk/index.css';
     // import "@/assets/css/general.css";
 
