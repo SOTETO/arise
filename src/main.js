@@ -5,7 +5,7 @@ import router from './router'
 import ElementUI from 'element-ui';
 import VueI18n from 'vue-i18n';
 import WidgetUserList from 'vca-widget-user'
-import { WidgetTopNavigation, WidgetBottomNavigation } from 'heureka-widget-navigation';
+import { WidgetTopNavigation, WidgetBottomNavigation } from 'heureka-widget-navigation-2021';
 import en from '@/lang/en_US.json';
 import de from '@/lang/de_VCA.json';
 import enElement from 'element-ui/lib/locale/lang/en';
@@ -40,7 +40,7 @@ new Vue({
     router,
     i18n,
     show: true,
-    components: { Arise, WidgetUserList, WidgetTopNavigation, WidgetBottomNavigation },
+    components: { Arise, WidgetUserList }, //, WidgetTopNavigation, WidgetBottomNavigation },
     template: '<App/>',
     mounted() {
         /**

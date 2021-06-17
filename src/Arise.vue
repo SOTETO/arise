@@ -9,8 +9,9 @@
 </template>
 
 <script>
-    import { WidgetTopNavigation, WidgetBottomNavigation } from 'heureka-widget-navigation';
+    import { WidgetTopNavigation, WidgetBottomNavigation } from 'heureka-widget-navigation-2021';
     import 'element-ui/lib/theme-chalk/index.css';
+    import 'heureka-widget-navigation-2021/dist/heureka-widget-navigation-2021.css'
     // import "@/assets/css/general.css";
 
     export default {
